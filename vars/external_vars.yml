@@ -29,10 +29,10 @@ org_business_dept      :  Human Resources
 rep_set_name           :  DemoRepSet
 
 ## OTHER PASSWORDS
-ldap_master_password   :  welcome1
-ldap_manager_password  :  welcome1
-kdc_master_password    :  welcome1
-kmip_ca_key_passwd     :  welcome1
-kmip_client_key_passwd :  welcome1
-tls_ca_key_passwd      :  welcome1
-tls_client_key_passwd  :  welcome1
+ldap_master_password   :  Welcome1
+ldap_manager_password  :  Welcome1
+kdc_master_password    :  Welcome1
+kmip_ca_key_passwd     :  Welcome1
+kmip_client_key_passwd :  Welcome1
+tls_ca_key_passwd      :  Welcome1
+tls_client_key_passwd  :  Welcome1
