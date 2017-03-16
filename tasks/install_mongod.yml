@@ -7,7 +7,7 @@
   copy: src=os/disable-transparent-hugepages.j2 dest=/etc/init.d/disable-transparent-hugepages mode=a+x
 # Hack to reload systemd settings otherwise sometimes systemd won't find 'disable-transparent-hugepages',
 #  see: https://github.com/ansible/ansible-modules-core/issues/4113
-- systemd: daemon_reload=yes name=sshd
+# systemd: daemon_reload=yes name=sshd
 - service: name=disable-transparent-hugepages enabled=yes state=started
 - yum: name=numactl state=latest
 

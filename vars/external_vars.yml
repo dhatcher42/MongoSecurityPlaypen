@@ -1,27 +1,27 @@
 ---
 ## FEATURE ENABLEMENT
-client_auth_method     :  ldap      # OPTIONS: none | userpwd | cert | ldap | kerberos
-internal_auth_method   :  keyfile   # OPTIONS: none | keyfile | cert   (must not be none if client authentication is not none)
-ssl_enabled            :  true      # OPTIONS: false | true            (must be true if client authentication is set to cert)
-auditing_enabled       :  true      # OPTIONS: false | true
-redactlogs_enabled     :  true      # OPTIONS: false | true
-encryptdb_enabled      :  true      # OPTIONS: false | true
+client_auth_method     :  kerberos  # OPTIONS: none | userpwd | cert | ldap | kerberos
+internal_auth_method   :  keyfile # OPTIONS: none | keyfile | cert   (must not be none if client authentication is not none)
+ssl_enabled            :  false    # OPTIONS: false | true            (must be true if client authentication is set to cert)
+auditing_enabled       :  false      # OPTIONS: false | true
+redactlogs_enabled     :  false     # OPTIONS: false | true
+encryptdb_enabled      :  false     # OPTIONS: false | true
 encryptdb_key_loc      :  keyfile   # OPTIONS: kmip | keyfile          (ignored if encryptdb is disabled)
-fips140_2_enabled      :  true      # OPTIONS: false | true
+fips140_2_enabled      :  false     # OPTIONS: false | true
 ldap_integration       :  direct    # OPTIONS: proxy | direct          (ignored if client_auth_method is not ldap)
 role_membership        :  external  # OPTIONS: internal | external     (ignored if client_auth_method is not ldap or ldap_integration is proxy)
 
 ## MONGODB DATABASE USERNAMES & PASSWORDS
 db_adminuser_name      :  dbmaster
-db_adminuser_password  :  adminPa55wd123
-db_sampleuser_name     :  jsmith
-db_sampleuser_password :  Pa55word124
+db_adminuser_password  :  Welcome1
+db_sampleuser_name     :  danny
+db_sampleuser_password :  Welcome1
 
 ## ELEMENTS OF DISTINGUISHED NAMES (DNs) FOR TLS/SSL CERTIFICATES, LDAP ENTITIES & KERBEROS REALMS
 org_type               :  com                     # Ensure only alpha-numerics & no spaces
-org_name               :  WizzyIndustries         # Ensure only alpha-numerics & no spaces
-org_location           :  London
-org_country            :  GB
+org_name               :  MongoDB         # Ensure only alpha-numerics & no spaces
+org_location           :  New York
+org_country            :  US
 org_inftech_dept       :  IT Department
 org_business_dept      :  Human Resources
 
@@ -29,11 +29,10 @@ org_business_dept      :  Human Resources
 rep_set_name           :  DemoRepSet
 
 ## OTHER PASSWORDS
-ldap_master_password   :  ldapMasterPa55wd123
-ldap_manager_password  :  ldapManagerPa55wd123
-kdc_master_password    :  kdcMasterPa55wd123
-kmip_ca_key_passwd     :  kmipCAPa55word789
-kmip_client_key_passwd :  kmipClientPa55word456
-tls_ca_key_passwd      :  tlsCAPa55word135
-tls_client_key_passwd  :  tlsClientPa55word678
-
+ldap_master_password   :  welcome1
+ldap_manager_password  :  welcome1
+kdc_master_password    :  welcome1
+kmip_ca_key_passwd     :  welcome1
+kmip_client_key_passwd :  welcome1
+tls_ca_key_passwd      :  welcome1
+tls_client_key_passwd  :  welcome1
